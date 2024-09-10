@@ -1,9 +1,7 @@
-// Get the content section where the data will be displayed
 const contentSection = document.getElementById('contentSection');
 
-// Add event listeners to each link
 document.getElementById('studentsAppliedLink').addEventListener('click', function(e) {
-  e.preventDefault(); // Prevent page reload
+  e.preventDefault(); 
   loadStudentsApplied();
 });
 
@@ -22,7 +20,6 @@ document.getElementById('applicationsPendingLink').addEventListener('click', fun
   loadApplicationsPending();
 });
 
-// Define the functions to load the content dynamically
 
 function loadStudentsApplied() {
   contentSection.innerHTML = `
